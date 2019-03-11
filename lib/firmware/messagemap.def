@@ -41,6 +41,9 @@
     MSG_IN(MessageType_MessageType_NanoGetAddress,                  NanoGetAddress,              fsm_msgNanoGetAddress,            MFRProhibited)
     MSG_IN(MessageType_MessageType_NanoSignTx,                      NanoSignTx,                  fsm_msgNanoSignTx,                MFRProhibited)
 
+    MSG_IN(MessageType_MessageType_RippleGetAddress,                RippleGetAddress,            fsm_msgRippleGetAddress,          MFRProhibited)
+    MSG_IN(MessageType_MessageType_RippleSignTx,                    RippleSignTx,                fsm_msgRippleSignTx,              MFRProhibited)
+
     MSG_IN(MessageType_MessageType_EosGetPublicKey,                 EosGetPublicKey,             fsm_msgEosGetPublicKey,           MFRProhibited)
     MSG_IN(MessageType_MessageType_EosSignTx,                       EosSignTx,                   fsm_msgEosSignTx,                 MFRProhibited)
     MSG_IN(MessageType_MessageType_EosTxActionAck,                  EosTxActionAck,              fsm_msgEosTxActionAck,            MFRProhibited)
@@ -77,6 +80,9 @@
     MSG_OUT(MessageType_MessageType_EthereumMessageSignature,       EthereumMessageSignature,    NO_PROCESS_FUNC,                  AnyVariant)
     MSG_OUT(MessageType_MessageType_NanoAddress,                    NanoAddress,                 NO_PROCESS_FUNC,                  AnyVariant)
     MSG_OUT(MessageType_MessageType_NanoSignedTx,                   NanoSignedTx,                NO_PROCESS_FUNC,                  AnyVariant)
+
+    MSG_OUT(MessageType_MessageType_RippleAddress,                  RippleAddress,               NO_PROCESS_FUNC,                  AnyVariant)
+    MSG_OUT(MessageType_MessageType_RippleSignedTx,                 RippleSignedTx,              NO_PROCESS_FUNC,                  AnyVariant)
 
     MSG_OUT(MessageType_MessageType_EosPublicKey,                   EosPublicKey,                NO_PROCESS_FUNC,                  AnyVariant)
     MSG_OUT(MessageType_MessageType_EosTxActionRequest,             EosTxActionRequest,          NO_PROCESS_FUNC,                  AnyVariant)
